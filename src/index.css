@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+@theme {
+  /* Paleta Beige Elegante */
+  --color-carbon: #FAF5F0;        /* Fondo principal, blanco cálido/beige muy claro */
+  --color-marfil: #F5E6D3;        /* Fondo secundario, beige claro */
+  --color-crema: #edd7bb;         /* Beige más cálido para secciones contrastantes */
+  
+  /* Acentos y Textos */
+  --color-lino: #D4B896;          /* Para líneas divisorias y bordes */
+  --color-tierra: #827050;        /* Beige oscuro para textos secundarios */
+  --color-bronce: #B8956F;        /* Beige neutro-oscuro */
+  --color-olivo: #A08560;         /* Beige oscuro para tags */
+  --color-rosa: #3D3220;          /* Marrón oscuro para textos principales */
+  
+  /* Tonos Dorados/Cálidos que contrastan con Beige */
+  --color-dorado: #9D7E60; 
+  --color-doradoOscuro: #7A6B54;
+
+  /* Tipografías */
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-script: "Dancing Script", cursive;
+  --font-elegant: "Cormorant Garamond", serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    /* Base beige cálida */
+    background-color: var(--color-carbon);
+    color: var(--color-rosa);
+  }
+}
