@@ -33,7 +33,7 @@ export default function CountdownTimer() {
       {blocks.map(({ value, label }, idx) => (
         <div key={label} className="flex items-start gap-1.5 sm:gap-3">
           <div className="flex flex-col items-center">
-            <div className="relative w-[62px] h-[62px] sm:w-20 sm:h-20 md:w-24 md:h-24
+            <div className="relative w-15.5 h-15.5 sm:w-20 sm:h-20 md:w-24 md:h-24
                             bg-carbon border border-dorado/25 flex items-center justify-center">
               <span className="absolute top-0 left-0 w-2 h-2 border-t border-l border-dorado" />
               <span className="absolute top-0 right-0 w-2 h-2 border-t border-r border-dorado" />
