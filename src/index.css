@@ -1,26 +1,27 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Dancing+Script:wght@500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
 
 @theme {
-  /* Paleta Beige Elegante */
-  --color-carbon: #FAF5F0;        /* Fondo principal, blanco cálido/beige muy claro */
-  --color-marfil: #F5E6D3;        /* Fondo secundario, beige claro */
-  --color-crema: #edd7bb;         /* Beige más cálido para secciones contrastantes */
+  /* Paleta botánica inspirada en las referencias */
+  --color-carbon: #f7f3eb;
+  --color-marfil: #fdfbf7;
+  --color-crema: #f0e8dc;
   
-  /* Acentos y Textos */
-  --color-lino: #D4B896;          /* Para líneas divisorias y bordes */
-  --color-tierra: #827050;        /* Beige oscuro para textos secundarios */
-  --color-bronce: #B8956F;        /* Beige neutro-oscuro */
-  --color-olivo: #A08560;         /* Beige oscuro para tags */
-  --color-rosa: #3D3220;          /* Marrón oscuro para textos principales */
+  /* Acentos y textos */
+  --color-lino: #d8c7ae;
+  --color-tierra: #776751;
+  --color-bronce: #b6956d;
+  --color-olivo: #8f9b7c;
+  --color-rosa: #4f4638;
+  --color-salvia: #a1ac8f;
+  --color-hoja: #5f6c52;
   
-  /* Tonos Dorados/Cálidos que contrastan con Beige */
-  --color-dorado: #9D7E60; 
-  --color-doradoOscuro: #7A6B54;
+  /* Tonos dorados cálidos */
+  --color-dorado: #b38d54;
+  --color-doradoOscuro: #8f6a3e;
 
   /* Tipografías */
-  --font-serif: "Playfair Display", Georgia, serif;
-  --font-script: "Dancing Script", cursive;
+  --font-serif: "Cinzel", serif;
+  --font-script: "Allura", cursive;
   --font-elegant: "Cormorant Garamond", serif;
 }
 
@@ -29,8 +30,37 @@
     scroll-behavior: smooth;
   }
   body {
-    /* Base beige cálida */
     background-color: var(--color-carbon);
     color: var(--color-rosa);
+  }
+}
+
+@layer utilities {
+  .animate-fade-rise {
+    animation: fade-rise 900ms ease-out both;
+  }
+
+  .animate-soft-pan {
+    animation: soft-pan 14s ease-in-out infinite alternate;
+  }
+
+  @keyframes fade-rise {
+    from {
+      opacity: 0;
+      transform: translateY(24px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes soft-pan {
+    from {
+      transform: scale(1.05) translateX(-2%);
+    }
+    to {
+      transform: scale(1.12) translateX(2%);
+    }
   }
 }
