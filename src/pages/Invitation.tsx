@@ -265,7 +265,11 @@ export default function Invitation() {
 
               <div className="mt-4 pt-6 border-t border-lino/60">
                 <p className="font-serif tracking-[0.2em] uppercase text-dorado text-[10px] mb-2">Código de vestimenta</p>
-                <p className="font-elegant text-hoja text-2xl">Cóctel de jardín</p>
+                <p className="font-elegant text-hoja text-2xl">Cóctel - jardín</p>
+              </div>
+              <div className="mt-4 pt-6 border-t border-lino/60">
+                <p className="font-serif tracking-[0.2em] uppercase text-dorado text-[10px] mb-2">Notas a considerar</p>
+                <p className="font-elegant text-hoja text-2xl">No se aceptan niños</p>
               </div>
             </div>
 
